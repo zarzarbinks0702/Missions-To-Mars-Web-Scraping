@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Info</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <a href="/scrape"><button type="button" class="btn btn-primary btn-lrg">Scrape New Data</button></a>
+    </div>
+    <div class="col-xs-12">
+      <h3>Latest Mars News</h3>
+      <h5>{{ mars.Mars_News[0] }}</h5>
+      <p>{{ mars.Mars_News[1] }}</p>
+    </div>
+    <div class="row">
+      <div class="col-xs-8">
+        <h3>Featured Mars Image</h3>
+        <img src="{{ mars.Featured_Image }}" alt="feautred image of mars">
+      </div>
+      <div class="col-xs-4">
+        {{ mars.Mars_Facts }}
+      </div>
+    </div>
+    <div class="col-xs-12" style="align-content: center">
+      <h3>Mars Hemispheres</h3>
+    </div>
+    <div class="col-xs-6">
+      {{ mars.Mars_Hemisphreres[0] }}
+    </div>
+    <div class="col-xs-6">
+      {{ mars.Mars_Hemisphreres[1] }}
+    </div>
+    <div class="col-xs-6">
+      {{ mars.Mars_Hemisphreres[2] }}
+    </div>
+    <div class="col-xs-6">
+      {{ mars.Mars_Hemisphreres[3] }}
+    </div>
+  </div>
+</body>
+
+</html>
