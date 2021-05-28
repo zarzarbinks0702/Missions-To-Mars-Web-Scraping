@@ -13,18 +13,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 #create the scrape function
 def scrape():
     ###################################################
-    # Database Set-Ups
-    ###################################################
-
-    #setup mongodb connection
-    conn = 'mongodb://localhost:27017'
-    client = pymongo.MongoClient(conn)
-
-    #define database and collection
-    db = client.mars_db
-    collection = db.news
-
-    ###################################################
     # News Scraping
     ###################################################
 
@@ -133,11 +121,13 @@ def scrape():
 
     ###################################################
     #return scraped data in a dictionary
-    return ({
-            'Mars News': [news_title, news_p],
-            'Featured Image': featured_image_url,
-            'Mars Facts': formatted_facts_html_table,
-            'Mars Hemisphreres': hemi_img_url_dicts
-            })
+    mars_info = {
+                'Mars News': [news_title, news_p],
+                'Featured Image': featured_image_url,
+                'Mars Facts': formatted_facts_html_table,
+                'Mars Hemisphreres': hemi_img_url_dicts
+                })
+
+    return mars_info
 
 ###################################################
