@@ -122,10 +122,11 @@ def scrape():
     ###################################################
     #return scraped data in a dictionary
     mars_info = {
-                'Mars_News': [news_title, news_p],
+                'Mars_News_Title': news_title,
+                'Mars_News_Text': news_p,
                 'Featured_Image': featured_image_url,
                 'Mars_Facts': formatted_facts_html_table,
-                'Mars_Hemisphreres': hemi_img_url_dicts
+                'Mars_Hemispheres': hemi_img_url_dicts
                 }
 
     return mars_info

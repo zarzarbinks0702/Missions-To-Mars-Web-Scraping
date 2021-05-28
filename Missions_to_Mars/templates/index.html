@@ -17,16 +17,18 @@
     </div>
     <div class="col-xs-12">
       <h3>Latest Mars News</h3>
-      <h5>{{ mars.Mars_News }}</h5>
-      <p>{{ mars.Mars_News }}</p>
+      <h5>{{ mars.Mars_News_Title }}</h5>
+      <p>{{ mars.Mars_News_Text }}</p>
     </div>
     <div class="row">
       <div class="col-xs-8">
         <h3>Featured Mars Image</h3>
-        <img src="{{ mars.Featured_Image }}" alt="feautred image of mars">
+        <img src="{{ mars.Featured_Image }}" alt="featured image of mars">
       </div>
       <div class="col-xs-4">
-        {{ mars.Mars_Facts }}
+        <table>
+          {{ mars.Mars_Facts }}
+        </table>
       </div>
     </div>
     <div class="col-xs-12" style="align-content: center">
