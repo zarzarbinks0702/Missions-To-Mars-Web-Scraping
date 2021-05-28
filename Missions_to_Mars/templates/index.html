@@ -31,20 +31,32 @@
         </table>
       </div>
     </div>
-    <div class="col-xs-12" style="align-content: center">
-      <h3>Mars Hemispheres</h3>
+    <div class="col-xs-12">
+      <center><h3>Mars Hemispheres</h3></center>
     </div>
     <div class="col-xs-6">
-      {{ mars.Mars_Hemisphreres }}
+      <figure>
+        <img src="{{ mars.Mars_Hemisphere_1.img_url }}" alt="image of Cerberus Hemisphere">
+      </figure>
+      <figcaption>{{ mars.Mars_Hemisphere_1.title }}</figcaption>
     </div>
     <div class="col-xs-6">
-      {{ mars.Mars_Hemisphreres }}
+      <figure>
+        <img src="{{ mars.Mars_Hemisphere_2.img_url }}" alt="image of Schiaparelli Hemisphere">
+      </figure>
+      <figcaption>{{ mars.Mars_Hemisphere_2.title }}</figcaption>
     </div>
     <div class="col-xs-6">
-      {{ mars.Mars_Hemisphreres }}
+      <figure>
+        <img src="{{ mars.Mars_Hemisphere_3.img_url }}" alt="image of Syrtis Major Hemisphere">
+      </figure>
+      <figcaption>{{ mars.Mars_Hemisphere_3.title }}</figcaption>
     </div>
     <div class="col-xs-6">
-      {{ mars.Mars_Hemisphreres }}
+      <figure>
+        <img src="{{ mars.Mars_Hemisphere_4.img_url }}" alt="image of Valles Marineris Hemisphere">
+      </figure>
+      <figcaption>{{ mars.Mars_Hemisphere_4.title }}</figcaption>
     </div>
   </div>
 </body>

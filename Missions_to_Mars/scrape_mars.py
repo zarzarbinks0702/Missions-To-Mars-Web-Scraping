@@ -126,7 +126,10 @@ def scrape():
                 'Mars_News_Text': news_p,
                 'Featured_Image': featured_image_url,
                 'Mars_Facts': formatted_facts_html_table,
-                'Mars_Hemispheres': hemi_img_url_dicts
+                'Mars_Hemisphere_1': hemi_img_url_dicts[0],
+                'Mars_Hemisphere_2': hemi_img_url_dicts[1],
+                'Mars_Hemisphere_3': hemi_img_url_dicts[2],
+                'Mars_Hemisphere_4': hemi_img_url_dicts[3]
                 }
 
     return mars_info
