@@ -1,5 +1,5 @@
 ###################################################
-# Mission to Mars
+# Mission to Mars - Scraping
 ###################################################
 
 #import dependencies
@@ -9,7 +9,6 @@ import requests
 import pymongo
 from splinter import Browser
 from webdriver_manager.chrome import ChromeDriverManager
-import flask
 
 #create the scrape function
 def scrape():
@@ -133,7 +132,7 @@ def scrape():
     ]
 
     ###################################################
-    #return scraped data into a dictionary
+    #return scraped data in a dictionary
     return ({
             'Mars News': [news_title, news_p],
             'Featured Image': featured_image_url,
