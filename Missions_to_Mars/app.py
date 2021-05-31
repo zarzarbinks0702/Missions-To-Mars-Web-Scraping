@@ -12,7 +12,7 @@ def index():
     #find one record from the mars database
     mars_data = mongo.db.collection.find_one()
     #return template and render data
-    return render_template("index.html", mars=mars_data, tables=mars_data['Mars_Facts'])
+    return render_template("index.html", mars=mars_data)
 
 @app.route('/scrape')
 def scraper():

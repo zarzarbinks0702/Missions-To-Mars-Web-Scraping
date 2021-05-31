@@ -12,48 +12,49 @@
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Mission to Mars</h1>
+      <b><h1>Mission to Mars</h1></b>
       <a href="/scrape"><button type="button" class="btn btn-primary btn-lrg">Scrape New Data</button></a>
     </div>
     <div class="col-xs-12">
-      <h2>Latest Mars News</h2>
+      <b><h2>Latest Mars News</h2></b>
       <h5>{{ mars.Mars_News_Title }}</h5>
       <p>{{ mars.Mars_News_Text }}</p>
     </div>
     <div class="row">
       <div class="col-xs-8">
-        <h2>Featured Mars Image</h2>
+        <b><h2>Featured Mars Image</h2></b>
         <img src="{{ mars.Featured_Image }}" alt="featured image of mars">
       </div>
       <div class="col-xs-4">
+        <b><h2>Mars Facts</h2></b>
         <table>
-          {{ mars.Mars_Facts }}
+          {{ mars.Mars_Facts | safe }}
         </table>
       </div>
     </div>
     <div class="col-xs-12">
-      <center><h2>Mars Hemispheres</h2></center>
+      <b><center><h2>Mars Hemispheres</h2></center></b>
     </div>
     <div class="col-xs-6">
-      <center><h3>{{ mars.Mars_Hemisphere_1_title }}</h3></center>
+      <b><center><h3>{{ mars.Mars_Hemisphere_1_title }}</h3></center></b>
       <figure>
         <img src="{{ mars.Mars_Hemisphere_1_img }}" alt="image of Cerberus Hemisphere">
       </figure>
     </div>
     <div class="col-xs-6">
-      <center><h3>{{ mars.Mars_Hemisphere_2_title }}</h3></center>
+      <b><center><h3>{{ mars.Mars_Hemisphere_2_title }}</h3></center></b>
       <figure>
         <img src="{{ mars.Mars_Hemisphere_2_img }}" alt="image of Schiaparelli Hemisphere">
       </figure>
     </div>
     <div class="col-xs-6">
-      <center><h3>{{ mars.Mars_Hemisphere_3_title }}</h3></center>
+      <b><center><h3>{{ mars.Mars_Hemisphere_3_title }}</h3></center></b>
       <figure>
         <img src="{{ mars.Mars_Hemisphere_3_img }}" alt="image of Syrtis Major Hemisphere">
       </figure>
     </div>
     <div class="col-xs-6">
-      <center><h3>{{ mars.Mars_Hemisphere_4_title }}</h3></center>
+      <b><center><h3>{{ mars.Mars_Hemisphere_4_title }}</h3></center></b>
       <figure>
         <img src="{{ mars.Mars_Hemisphere_4_img }}" alt="image of Valles Marineris Hemisphere">
       </figure>
