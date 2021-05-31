@@ -13,26 +13,32 @@
   <div class="container-fluid">
     <div class="jumbotron text-center">
       <b><h1>Mission to Mars</h1></b>
+      <!--insert button with link to scrape app-->
       <a href="/scrape"><button type="button" class="btn btn-primary btn-lrg">Scrape New Data</button></a>
     </div>
     <div class="col-xs-12">
+      <!--call apropriate variables to populate the mars news section-->
       <b><h2>Latest Mars News</h2></b>
       <h5>{{ mars.Mars_News_Title }}</h5>
       <p>{{ mars.Mars_News_Text }}</p>
     </div>
     <div class="row">
       <div class="col-xs-8">
+        <!--call apropriate variables to populate the featured mars image section-->
         <b><h2>Featured Mars Image</h2></b>
         <img src="{{ mars.Featured_Image }}" alt="featured image of mars">
       </div>
       <div class="col-xs-4">
+        <!--call table from app-->
         <b><h2>Mars Facts</h2></b>
         <table>
+          <!--simple tables in a web app using flask and pandas with Python. Notorious BIG (Data). (2015, August 9). https://sarahleejane.github.io/learning/python/2015/08/09/simple-tables-in-webapps-using-flask-and-pandas-with-python.html. -->
           {{ mars.Mars_Facts | safe }}
         </table>
       </div>
     </div>
     <div class="col-xs-12">
+      <!--call apropriate variables to populate the mars hemisphere images-->
       <b><center><h2>Mars Hemispheres</h2></center></b>
     </div>
     <div class="col-xs-6">
