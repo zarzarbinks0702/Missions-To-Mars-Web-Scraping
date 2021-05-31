@@ -70,7 +70,7 @@ def scrape():
     facts_df.rename(columns={0: 'Fact', 1: 'Description'}, inplace=True)
 
     #convert df to an html table
-    facts_html_table = facts_df.to_html()
+    facts_html_table = facts_df.to_html(index=False)
 
     #remove unnecessary new lines
     formatted_facts_html_table = facts_html_table.replace('\n', '')
