@@ -68,7 +68,6 @@ def scrape():
 
     #rename the columns and re-index the df
     facts_df.rename(columns={0: 'Fact', 1: 'Description'}, inplace=True)
-    facts_df.set_index('Fact', inplace=True)
 
     #convert df to an html table
     facts_html_table = facts_df.to_html()
