@@ -16,13 +16,13 @@
       <a href="/scrape"><button type="button" class="btn btn-primary btn-lrg">Scrape New Data</button></a>
     </div>
     <div class="col-xs-12">
-      <h3>Latest Mars News</h3>
+      <h2>Latest Mars News</h2>
       <h5>{{ mars.Mars_News_Title }}</h5>
       <p>{{ mars.Mars_News_Text }}</p>
     </div>
     <div class="row">
       <div class="col-xs-8">
-        <h3>Featured Mars Image</h3>
+        <h2>Featured Mars Image</h2>
         <img src="{{ mars.Featured_Image }}" alt="featured image of mars">
       </div>
       <div class="col-xs-4">
@@ -32,31 +32,31 @@
       </div>
     </div>
     <div class="col-xs-12">
-      <center><h3>Mars Hemispheres</h3></center>
+      <center><h2>Mars Hemispheres</h2></center>
     </div>
     <div class="col-xs-6">
+      <center><h3>{{ mars.Mars_Hemisphere_1_title }}</h3></center>
       <figure>
-        <img src="{{ mars.Mars_Hemisphere_1.img_url }}" alt="image of Cerberus Hemisphere">
+        <img src="{{ mars.Mars_Hemisphere_1_img }}" alt="image of Cerberus Hemisphere">
       </figure>
-      <figcaption>{{ mars.Mars_Hemisphere_1.title }}</figcaption>
     </div>
     <div class="col-xs-6">
+      <center><h3>{{ mars.Mars_Hemisphere_2_title }}</h3></center>
       <figure>
-        <img src="{{ mars.Mars_Hemisphere_2.img_url }}" alt="image of Schiaparelli Hemisphere">
+        <img src="{{ mars.Mars_Hemisphere_2_img }}" alt="image of Schiaparelli Hemisphere">
       </figure>
-      <figcaption>{{ mars.Mars_Hemisphere_2.title }}</figcaption>
     </div>
     <div class="col-xs-6">
+      <center><h3>{{ mars.Mars_Hemisphere_3_title }}</h3></center>
       <figure>
-        <img src="{{ mars.Mars_Hemisphere_3.img_url }}" alt="image of Syrtis Major Hemisphere">
+        <img src="{{ mars.Mars_Hemisphere_3_img }}" alt="image of Syrtis Major Hemisphere">
       </figure>
-      <figcaption>{{ mars.Mars_Hemisphere_3.title }}</figcaption>
     </div>
     <div class="col-xs-6">
+      <center><h3>{{ mars.Mars_Hemisphere_4_title }}</h3></center>
       <figure>
-        <img src="{{ mars.Mars_Hemisphere_4.img_url }}" alt="image of Valles Marineris Hemisphere">
+        <img src="{{ mars.Mars_Hemisphere_4_img }}" alt="image of Valles Marineris Hemisphere">
       </figure>
-      <figcaption>{{ mars.Mars_Hemisphere_4.title }}</figcaption>
     </div>
   </div>
 </body>

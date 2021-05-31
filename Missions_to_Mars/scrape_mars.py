@@ -126,10 +126,14 @@ def scrape():
                 'Mars_News_Text': news_p,
                 'Featured_Image': featured_image_url,
                 'Mars_Facts': formatted_facts_html_table,
-                'Mars_Hemisphere_1': hemi_img_url_dicts[0],
-                'Mars_Hemisphere_2': hemi_img_url_dicts[1],
-                'Mars_Hemisphere_3': hemi_img_url_dicts[2],
-                'Mars_Hemisphere_4': hemi_img_url_dicts[3]
+                'Mars_Hemisphere_1_title': hemi_img_url_dicts[0]['title'],
+                'Mars_Hemisphere_2_title': hemi_img_url_dicts[1]['title'],
+                'Mars_Hemisphere_3_title': hemi_img_url_dicts[2]['title'],
+                'Mars_Hemisphere_4_title': hemi_img_url_dicts[3]['title'],
+                'Mars_Hemisphere_1_img': hemi_img_url_dicts[0]['img_url'],
+                'Mars_Hemisphere_2_img': hemi_img_url_dicts[1]['img_url'],
+                'Mars_Hemisphere_3_img': hemi_img_url_dicts[2]['img_url'],
+                'Mars_Hemisphere_4_img': hemi_img_url_dicts[3]['img_url']
                 }
 
     return mars_info
