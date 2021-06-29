@@ -1,4 +1,4 @@
-# web-scraping-challenge
+# Missions-To-Mars-Web-Scraping
 
 Web scraping project focusing on using BeautifulSoup, Splinter, and Python to scrape the internet for information about Mars. 06/1/221.
 
